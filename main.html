@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script type="text/javascript" src="myScript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+</head>
+
+<body onload="changeSlides(0)">
+    <div class="navbar">
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="About-Me.html">About me</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="timeline">
+        <img src="Images-about-me/me.jpg" alt="pic" id="profile">
+        <div>
+            <h3>Marko</h3>
+            <h5>Front-End Developer-Beginner</h5>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slides">
+            <h2 class="slide-head">High school</h2>
+            <p class="slide-body">I went to electrical engineering high school 'Mihajlo Pupin' in Novi Sad-Serbia.</p>
+
+        </div>
+
+        <div class="slides">
+            <h2 class="slide-head">College</h2>
+            <p class="slide-body">I went to Faculty of Technical Sciences in Novi Sad, on the course of Mehcanical
+                engineering. <br> I finished 2 years there and then i made a break from studies.</p>
+        </div>
+
+        <div class="slides">
+            <h2 class="slide-head">Masters</h2>
+            <p class="slide-body">I currently dont have any Masters degrees.</p>
+        </div>
+
+        <a onclick="changeSlides(-1)" id="left">&#10094</a>
+        <a onclick="changeSlides(1)" id="right">&#10095</a>
+    </div>
+
+    <div id="exp-container">
+        <a onclick="showModal1()">
+            <div class="exp-section" id="section1">1</div>
+        </a>
+        <a onclick="showModal2()">
+            <div class="exp-section" id="section2">2</div>
+        </a>
+        <a onclick="showModal3()">
+            <div class="exp-section" id="section3">3</div>
+        </a>
+    </div>
+
+    <div id="modal1" class="modal-container">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal1()">&times; </span>
+            This is the first modal
+        </div>
+
+    </div>
+
+    <div id="modal2" class="modal-container">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal2()">&times; </span>
+            This is the second modal
+        </div>
+    </div>
+
+    <div id="modal3" class="modal-container">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal3()">&times; </span>
+            This is the third modal
+        </div>
+    </div>
+
+</body>
+
+</html>
